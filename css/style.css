@@ -1,0 +1,157 @@
+/* This is a css stylesheet for madmarkit logo*/
+
+#wrapper {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	background-image: 
+}
+
+.madmarkit {
+	transform-origin: 250px 250px;
+	animation: contHover 9s ease-in-out infinite;
+}
+
+@keyframes contHover {
+	20% {
+		transform: translate(0px, 40px);
+	}
+
+	40% {
+		transform: translate(0px, 0px); 
+	}
+
+	65% {
+		transform: translate(0px, 40px);
+	}	
+}
+	
+.button1 {
+	opacity: 0;
+	transition: all .5s;
+	transform-origin: 149px 200px;
+	border-style: solid;
+	animation: fadeInDown 3s ease-in-out 8.5s 1 forwards;
+}
+
+.button1:hover {
+	transform: scale(1.08);
+	fill: white;
+	box-shadow: 0 0 0 6px #000, 0 0 0 7px #ffffff;
+}
+
+.button2 {
+	opacity: 0;
+	transition: all .5s;
+	transform-origin: 149px 200px;
+	animation: bttnTwoIntro 3.5s ease-in-out 8.5s 1 forwards;
+}
+
+.button2:hover {
+	transform: scale(1.08);
+	fill: white;
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bttnIntro {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bttnTwoIntro {
+	0%  {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.thumb {
+	opacity: 0;
+	animation: fadeInDownThumb 3s ease-in-out 8.5s 1 forwards;
+}
+
+.left-leg {
+	opacity: 0;
+	animation: fadeInDownThumb 2s ease-in-out 10.5s 1 forwards;
+}
+
+.right-leg {
+	opacity: 0;
+	animation: fadeInDownThumb 2s ease-in-out 10.5s 1 forwards;
+}
+
+.m-triangle {
+	opacity: 0;
+	animation: fadeInDownThumb 1.5s ease-in-out 9.5s 1 forwards;
+}
+
+.mad {
+	opacity: 0;
+	animation: fadeInDownThumb 1.5s ease-in-out 9.7s 1 forwards;
+}
+
+.stylus {
+	opacity: 0;
+	animation: fadeInDownThumb 2.5s ease-in-out 10.5s 1 forwards;
+}
+
+.stylustip {
+	opacity: 0;
+	animation: fadeInDownStylusTip 2.5s ease-in-out 10.7s 1 forwards;
+}
+
+@keyframes fadeInDownThumb {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -8%, 0);
+    transform: translate3d(0, -8%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    fill: #bdc3c7;
+  }
+}
+
+@keyframes fadeInDownStylusTip {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -8%, 0);
+    transform: translate3d(0, -8%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    fill: black;
+  }
+}
